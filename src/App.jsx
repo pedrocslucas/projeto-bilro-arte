@@ -1,28 +1,21 @@
-import { useContext, useEffect } from 'react';
-import { QuizContext } from './context/quiz';
+import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import Quiz from './Components/QuizModal/Quiz';
 
-import Welcome from './Components/Welcome';
-import Question from './Components/Question';
-import GameOver from './Components/GameOver';
+const App = () => {
+  const [showQuiz, setShowQuiz] = useState(false);
 
-import './App.css';
-
-function App() {
-  const [quizState, dispatch] = useContext(QuizContext);
-
-  useEffect(()=>{
-    dispatch({type:"REORDER_QUESTIONS"})
-  },[])
+  const handleBuyClick = () => {
+    setShowQuiz(true);
+  };
 
   return (
-    <div className="App">
-      <h1>Quiz Bilro Arte</h1>
-      {quizState.gameStage === "Start" && <Welcome/>}
-      {quizState.gameStage === "Playing" && <Question/>}
-      {quizState.gameStage === "End" && <GameOver/>}
-      
+    <div>
+      <h1>Seu App</h1>
+      <Button onClick={handleBuyClick}>Comprar</Button>
+      {showQuiz && <Quiz />} {/* Mostra o Quiz baseado no estado de `showQuiz` */}
     </div>
   );
-}
+};
 
 export default App;

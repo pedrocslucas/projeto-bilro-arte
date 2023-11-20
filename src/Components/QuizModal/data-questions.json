@@ -1,0 +1,53 @@
+[
+    {
+      "question": "Qual é a capital do Brasil?",
+      "alternatives": [
+        { "text": "Rio de Janeiro", "isCorrect": false },
+        { "text": "São Paulo", "isCorrect": false },
+        { "text": "Brasília", "isCorrect": true },
+        { "text": "Belo Horizonte", "isCorrect": false },
+        { "text": "Distrito Federal", "isCorrect": false }
+      ]
+    },
+    {
+        "question": "Qual é o maior planeta do sistema solar?",
+        "alternatives": [
+          { "text": "Terra", "isCorrect": false },
+          { "text": "Júpiter", "isCorrect": true },
+          { "text": "Saturno", "isCorrect": false },
+          { "text": "Marte", "isCorrect": false },
+          { "text": "Vênus", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quem escreveu 'Dom Quixote'?",
+        "alternatives": [
+          { "text": "Miguel de Cervantes", "isCorrect": true },
+          { "text": "William Shakespeare", "isCorrect": false },
+          { "text": "Jorge Luis Borges", "isCorrect": false },
+          { "text": "Machado de Assis", "isCorrect": false },
+          { "text": "Charles Dickens", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Qual é a montanha mais alta do mundo?",
+        "alternatives": [
+          { "text": "Monte Everest", "isCorrect": true },
+          { "text": "Monte Kilimanjaro", "isCorrect": false },
+          { "text": "Monte K2", "isCorrect": false },
+          { "text": "Monte McKinley", "isCorrect": false },
+          { "text": "Mont Blanc", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Quem pintou a 'Mona Lisa'?",
+        "alternatives": [
+          { "text": "Leonardo da Vinci", "isCorrect": true },
+          { "text": "Vincent van Gogh", "isCorrect": false },
+          { "text": "Pablo Picasso", "isCorrect": false },
+          { "text": "Michelangelo", "isCorrect": false },
+          { "text": "Rafael Sanzio", "isCorrect": false }
+        ]
+      }
+  ]
+  
