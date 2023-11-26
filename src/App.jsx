@@ -1,19 +1,14 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import Quiz from './Components/QuizModal/Quiz';
+import React from 'react';
+import CardProduto from './Components/CardProduto/CardProduto';
 
 const App = () => {
-  const [showQuiz, setShowQuiz] = useState(false);
-
-  const handleBuyClick = () => {
-    setShowQuiz(true);
-  };
 
   return (
     <div>
-      <h1>Seu App</h1>
-      <Button onClick={handleBuyClick}>Comprar</Button>
-      {showQuiz && <Quiz />} {/* Mostra o Quiz baseado no estado de `showQuiz` */}
+      <h1>Projeto das Rendeiras</h1>
+
+      <CardProduto />
+      
     </div>
   );
 };
