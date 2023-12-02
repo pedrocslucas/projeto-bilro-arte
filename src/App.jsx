@@ -1,16 +1,24 @@
-import React from 'react';
-import CardProduto from './Components/CardProduto/CardProduto';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ProfileList from './Components/ProfileRendeiras/ProfileList';
+import ProfilePage from './Components/ProfileRendeiras/ProfilePage';
 
-const App = () => {
+function App() {
+  const [selectedProfileId, setSelectedProfileId] = useState(null);
+
+  const onSelectProfile = (id) => {
+    setSelectedProfileId(id);
+  };
 
   return (
-    <div>
-      <h1>Projeto das Rendeiras</h1>
-
-      <CardProduto />
-      
+    <div className="App">
+      {!selectedProfileId ? (
+        <ProfileList onSelectProfile={onSelectProfile} />
+      ) : (
+        <ProfilePage selectedProfileId={selectedProfileId} />
+      )}
     </div>
   );
-};
+}
 
 export default App;
